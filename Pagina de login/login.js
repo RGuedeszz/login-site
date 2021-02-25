@@ -32,6 +32,7 @@ function trocaVisibilidade() {
 
 function confirmaCadastro() {
     let podeConfirmar = false;
+    let cadastrado = true;
     let completo = false;
     let senhaIgual = false;
     let nomeCadastro = document.getElementById("nomeCad").value;
@@ -41,7 +42,7 @@ function confirmaCadastro() {
     let confirmaSenhaCadastro = document.getElementById("confirmaSenhaCad").value;
     let confirmaTelefone = document.getElementById("telefoneCad").value;
     
-
+    //////// Confirmação ////////
     if ((nomeCadastro && nascimentoCadastro && emailCadastro && senhaCadastro && confirmaSenhaCadastro && confirmaTelefone) != 0) {
         completo = true;
     } else {
@@ -59,6 +60,17 @@ function confirmaCadastro() {
 
     if (podeConfirmar) {
         window.alert("Tudo certo");
+        cadastrado = true;
     }
     
+    //////// Banco usuarios ////////
+    if (cadastrado) {
+        document.write("Confirmado seu cadastro (sim, era pra você entrar nessa página, não é um bug): ");
+        document.write("Nome: " + nomeCadastro);
+        document.write("Nascimento: " + nascimentoCadastro);
+        document.write("email: " + emailCadastro);
+        document.write("Senha: " + senhaCadastro);
+        document.write("Telefone: " + confirmaTelefone);
+    }
+
 }
