@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    cursor: default;
+    margin: 0px;
+}
+
+#cabecalho {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(24, 178, 224);
+    border-bottom: 1px solid black;
+}
+
+#titulo {
+    position: relative;
+    right: 1000px;
+    top: 15px;
+    color: seashell;
+    font-size: 55px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-indent: 90px;
+    padding-top: 1px;
+    font-weight: bold;
+}
+
+.caixaBox {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    padding-left: 20px;
+}
+
+.tit {
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.caixaTexto {
+    position: relative;
+    right: 70px;
+    top: 5px;
+}
+
+#botao {
+    border-bottom: 2px solid black;
+    position: relative;
+    right: 90%;
+    top: 14px;
+}
+
+#esqueceu {
+    position: relative;
+    font-size: 12px;
+    right: 315%;
+    top: 35px;
+}
+
+#esqueceu:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(12, 89, 112);
+}
+
+#botao:hover {
+    cursor: pointer;
+}
+
+#imagemOlhoAberto {
+    position: relative;
+    width: 11px;
+    height: 11px;
+    right: 2450%;
+    top: 15px;
+}
+
+#visibilidade {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#visibilidade:hover {
+    cursor:pointer;
+}
+
+#informações {
+    position: absolute;
+    top: 120px;
+    width: 50%;
+    height: 85%;
+}
+
+#principalImg {
+    width: 100%;
+    height: 100%;
+}
+
+#divDeCadastro {
+    position: absolute;
+    top: 120px;
+    right: 0%;
+    width: 50%;
+    height: 85%;
+    background-color: rgb(95, 105, 121);
+}
+
+#tituloCadastro {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#cadastro {
+    position: inherit;
+    top: 20%;
+    right: 30%;
+    border: 5px solid rgb(32, 34, 21);
+    padding: 30px 30px 160px 30px;
+    background-color: rgb(16, 247, 208);
+}
+
+#tabelaCadastro {
+    text-align: right;
+}
+
+.cad {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#botaoConfirmaCad {
+    position: inherit;
+    top: 80%;
+    right: 40%;
+}

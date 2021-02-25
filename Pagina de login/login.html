@@ -1,0 +1,71 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>RogerBook</title>
+        <link rel = "stylesheet" href="login.css">
+    </head>
+
+    <body>
+        <header id = "cabecalho">
+            <div class = "caixaBox">
+                <table>
+                    <tr>
+                        <td><h1 id = "titulo">Rogerbook</h1></td>
+                        <td class="tit">Login: <div class = "caixaTexto"><input id = "login" type="text" alt="login" value="" onkeyup="confirmaEnter(event)"></div></td>
+                        <td class="tit">Senha: <div class = "caixaTexto"><input id = "senha" type="password" alt="senha" value="" onkeyup="confirmaEnter(event)"></div></td>
+                        <td><input id = "botao" type="button" value="ENTRAR" onclick="dados()"></td>
+                        <td><a id = "esqueceu" href= "esqueceuSenha.html">Esqueci minha senha</a></td>
+                        <!--<td><button id="visibilidade" onclick="trocaVisibilidade()" value="protegido"><img id = "imagemOlhoAberto" src="visivel.svg"></button></td>-->
+                    </tr>
+                </table>
+            </div>
+        </header>
+
+        <div id ="informações">
+            <img id="principalImg" src="imagemPrincipal.jpg" alt="hastag">
+        </div>
+
+        <div id = "divDeCadastro">
+            <h2 id="tituloCadastro">Não tem uma conta?</h2>
+            <div id = "cadastro">
+                <table id="tabelaCadastro">
+                    <tr>
+                        <td class="cad">Nome</td>
+                        <th><div class="caixaTextoCadastro"><input id="nomeCad" type="text" alt="nome" value=""></div></th>
+                    </tr>
+
+                    <tr>
+                        <td class="cad">Data de nascimento</td>
+                        <th><div class="caixaTextoCadastro"><input id="dataCad" type="date" alt="nascimento" value=""></div></th>
+                    </tr>
+
+                    <tr>
+                        <td class="cad">email</td>
+                        <th><div class="caixaTextoCadastro"><input id="emailCad" type="text" alt="login" value=""></div></th>
+                    </tr>
+
+                    <tr>
+                        <td class="cad">Senha</td>
+                        <th><div class="caixaTextoCadastro"><input id="senhaCad" type="password" alt="senha" value=""></div></th>
+                    </tr>
+
+                    <tr>
+                        <td class="cad">Confirmação de senha</td>
+                        <th><div class="caixaTextoCadastro"><input id="confirmaSenhaCad" type="password" alt="confirma Senha" value=""></div></th>
+                    </tr>
+
+                    <tr>
+                        <td class="cad">Numero de telefone</td>
+                        <th><div class="caixaTextoCadastro"><input id="telefoneCad" type="number" alt="telefone" value=""></div></th>
+                    </tr>
+                </table>
+
+                <input id="botaoConfirmaCad" type="button" value="CADASTRAR" onclick="confirmaCadastro()">
+            </div>
+        </div>
+       
+        <script type="text/javascript" src="login.js"></script>
+
+    </body>
+
+</html>
